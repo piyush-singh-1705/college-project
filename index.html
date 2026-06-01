@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika | Premium Indian Fine Dining</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+/* Adjust hero section to use new Indian background image properly */
+.hero {
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9)), url('assets/hero_bg_indian.png') center/cover no-repeat;
+}
+.menu-grid a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+</style>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Zaika</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Our Heritage</a></li>
+                <li><a href="#menu" class="nav-link">Royal Menu</a></li>
+                <li><a href="#chef" class="nav-link">The Chef</a></li>
+            </ul>
+            <a href="#reservation" class="btn btn-nav">Book a Table</a>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Experience Royal Indian Cuisine</h1>
+            <p class="hero-subtitle">A symphony of authentic Indian spices. Discover culinary perfection at Zaika.</p>
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container about-container reveal-up">
+            <div class="about-text">
+                <h2 class="section-title">Our Heritage</h2>
+                <h3 class="section-subtitle">A Passion for Tradition</h3>
+                <p>At Zaika, we bring the royal heritage of Indian kitchens straight to your table. Founded on the principles of authentic spices, age-old recipes, and impeccable hospitality, our restaurant offers a modern sanctuary of flavors.</p>
+                <p>Every ingredient is carefully sourced from the spice routes of India, and every dish is crafted to deliver an unforgettable dining experience that will awaken your senses.</p>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="about-image glass-panel">
+                    <img src="assets/menu_biryani.png" alt="Royal Dum Biryani">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section dark-bg" id="menu">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title text-center">Our Royal Menu</h2>
+                <p class="section-subtitle text-center">Click on any dish to view ingredients and details.</p>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <a href="menu-item.html?id=butter-chicken" style="transition-delay: 0.1s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_butter_chicken.png" alt="Authentic Butter Chicken">
+                            <div class="price">₹750</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Zafran Butter Chicken</h3>
+                            <p>Rich and creamy tomato gravy with charcoal-smoked chicken tikka, served with garlic butter naan.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 2 -->
+                <a href="menu-item.html?id=paneer-tikka" style="transition-delay: 0.2s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_paneer_tikka.png" alt="Paneer Tikka">
+                            <div class="price">₹550</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Tandoori Paneer Tikka</h3>
+                            <p>Sizzling cottage cheese marinated in hung curd and robust spices, roasted in a traditional clay oven.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 3 -->
+                <a href="menu-item.html?id=biryani" style="transition-delay: 0.3s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_biryani.png" alt="Mutton Dum Biryani">
+                            <div class="price">₹950</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Nizami Dum Biryani</h3>
+                            <p>Fragrant basmati rice slow-cooked with tender mutton pieces, saffron, and traditional whole spices.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 4 -->
+                <a href="menu-item.html?id=dal-makhani" style="transition-delay: 0.4s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_dal_makhani.png" alt="Dal Makhani">
+                            <div class="price">₹450</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Signature Dal Makhani</h3>
+                            <p>Black lentils simmered overnight on a low flame, finished with fresh cream and butter.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 5 -->
+                <a href="menu-item.html?id=shahi-tukda" style="transition-delay: 0.5s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_shahi_tukda.png" alt="Shahi Tukda">
+                            <div class="price">₹350</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Royal Shahi Tukda</h3>
+                            <p>Golden fried bread soaked in saffron-infused milk syrup, topped with rich rabri and nuts.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 6 -->
+                <a href="menu-item.html?id=mango-lassi" style="transition-delay: 0.6s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_lassi.png" alt="Mango Lassi">
+                            <div class="price">₹250</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Saffron Mango Lassi</h3>
+                            <p>Chilled and creamy traditional yogurt drink blended with Alphonso mangoes and chopped pistachios.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 7 -->
+                <a href="menu-item.html?id=samosa" style="transition-delay: 0.1s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_samosa.png" alt="Samosa Chaat">
+                            <div class="price">₹200</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Crispy Samosa Chaat</h3>
+                            <p>Golden fried pastry stuffed with spiced potatoes, topped with sweet tamarind and mint chutneys.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 8 -->
+                <a href="menu-item.html?id=tandoori-chicken" style="transition-delay: 0.2s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_tandoori_chicken.png" alt="Tandoori Chicken">
+                            <div class="price">₹650</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Classic Tandoori Chicken</h3>
+                            <p>Whole chicken marinated with yogurt and aromatic spices, roasted perfectly in a clay tandoor.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 9 -->
+                <a href="menu-item.html?id=palak-paneer" style="transition-delay: 0.3s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_palak_paneer.png" alt="Palak Paneer">
+                            <div class="price">₹480</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Lehsuni Palak Paneer</h3>
+                            <p>Soft cottage cheese cubes simmered in a vibrant and creamy garlic-tempered spinach gravy.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Item 10 -->
+                <a href="menu-item.html?id=gulab-jamun" style="transition-delay: 0.4s;" class="reveal-up">
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="assets/menu_gulab_jamun.png" alt="Gulab Jamun">
+                            <div class="price">₹300</div>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Warm Gulab Jamun</h3>
+                            <p>Soft and spongy milk dumplings soaked in a warm aromatic rose and cardamom infused sugar syrup.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef section" id="chef">
+        <div class="container chef-container reveal-up">
+            <div class="chef-image-wrapper">
+                <div class="chef-image">
+                    <img src="assets/chef_indian.png" alt="Executive Chef">
+                </div>
+            </div>
+            <div class="chef-text">
+                <h2 class="section-title">Meet The Masterchef</h2>
+                <h3 class="section-subtitle">Executive Chef, Raghav Kapoor</h3>
+                <p>With over two decades of experience leading kitchens in luxury heritage hotels across Jaipur and Delhi, Chef Raghav brings a royal touch to modern fine dining.</p>
+                <p>"Indian cuisine is a vibrant tapestry of flavors. My goal is to present these age-old heritage recipes with a modern elegance that speaks to the soul."</p>
+                <div class="signature">Raghav Kapoor</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section dark-bg" id="reservation">
+        <div class="container reservation-container reveal-zoom">
+            <div class="reservation-box glass-panel text-center">
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="section-subtitle">Secure your spot for an unforgettable evening at Zaika.</p>
+                <form class="reservation-form" id="resForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" required>
+                        <select required>
+                            <option value="" disabled selected>Number of Guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Confirm Reservation</button>
+                    <div id="form-message" class="hidden">Thank you! Your reservation request has been received.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container text-center">
+            <h2 class="logo">Zaika</h2>
+            <p>Taj Avenue, Connaught Place, New Delhi | +91 98765 43210 | info@zaikarestaurant.in</p>
+            <div class="footer-bottom">
+                &copy; 2026 Zaika Indian Fine Dining. Designed for Frontend Project.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
